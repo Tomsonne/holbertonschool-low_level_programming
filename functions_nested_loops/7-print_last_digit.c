@@ -12,8 +12,5 @@
 
 int print_last_digit(int c)
 {
-int res = abs(c);
-
-res = res % 10;
-return (res % 10);
+return (abs(c % 10));
 }
