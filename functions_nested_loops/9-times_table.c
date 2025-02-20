@@ -23,7 +23,7 @@ for (int i = 0 ; i < 10 ; i++)
 	else
 		{
 		printf("%d", res);
-		_putchar('\n');
+		putchar('\n');
 		}
 	}
 }
