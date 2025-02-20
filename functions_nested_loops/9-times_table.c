@@ -20,33 +20,28 @@ for (i = 0 ; i < 10 ; i++)
 		{
 			if (res <= 9)
 			{
+				_putchar(res + '0');
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(res  + '0');
 			}
 			else if (res >= 10)
 			{
+				 _putchar((res / 10) + '0');
+				 _putchar((res % 10) + '0');
 				_putchar(',');
 				_putchar(' ');
-				_putchar((res / 10) + '0');
-                                _putchar((res % 10) + '0');
 			}
 		}
 		else
 		{
-			if (res <= 10)
+			if (res <= 9)
 			{
-				_putchar(',');
-                                _putchar(' ');
-				_putchar(' ');
 				_putchar((res % 10) + '0');
 			}
 			else if (res >= 10)
 			{
-				 _putchar(',');
-                                 _putchar(' ');
-                		 _putchar((res / 10) + '0');
+		  		 _putchar((res / 10) + '0');
                 		 _putchar((res % 10) + '0');
 			}
 		}
