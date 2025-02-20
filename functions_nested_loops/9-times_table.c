@@ -17,13 +17,24 @@ for (i = 0 ; i < 10 ; i++)
 	for (mult = 0 ; mult < 10 ; mult++)
 	{
 	res = i * mult;
+²²²²if (res < 10)
+{0000000000
+_putchar((res % 10) + '0');
 	if (mult != 9)
-	printf("%d,  ", res);
+	{
+	_putchar((res / 10) + '0');
+	_putchar((res % 10) + '0');
+	_putchar(',');
+	_putchar(' ');
+	_putchar(' ');
+	}
 	else
 		{
-		printf("%d", res);
-		putchar('\n');
+		_putchar((res / 10) + '0');
+	        _putchar((res % 10) + '0');
+		_putchar('\n');
 		}
+}
 	}
 }
 }
