@@ -13,28 +13,45 @@ void times_table(void)
 int res, i, mult;
 for (i = 0 ; i < 10 ; i++)
 {
-
 	for (mult = 0 ; mult < 10 ; mult++)
 	{
-	res = i * mult;
-²²²²if (res < 10)
-{0000000000
-_putchar((res % 10) + '0');
-	if (mult != 9)
-	{
-	_putchar((res / 10) + '0');
-	_putchar((res % 10) + '0');
-	_putchar(',');
-	_putchar(' ');
-	_putchar(' ');
-	}
-	else
+		res = i * mult;
+		if (mult != 9)
 		{
-		_putchar((res / 10) + '0');
-	        _putchar((res % 10) + '0');
-		_putchar('\n');
+			if (res <= 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(res  + '0');
+			}
+			else if (res >= 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((res / 10) + '0');
+                                _putchar((res % 10) + '0');
+			}
 		}
-}
+		else
+		{
+			if (res <= 10)
+			{
+				_putchar(',');
+                                _putchar(' ');
+				_putchar(' ');
+				_putchar((res % 10) + '0');
+			}
+			else if (res >= 10)
+			{
+				 _putchar(',');
+                                 _putchar(' ');
+                		 _putchar((res / 10) + '0');
+                		 _putchar((res % 10) + '0');
+			}
+		}
 	}
+_putchar('\n');
+
 }
 }
