@@ -17,10 +17,10 @@ t = 0;
 for (i = 0 ; i < 10 ; i++)
 {
 t = 0;
-for (mult = 0 ; mult < 10 ; mult++)
+for (mult = 0 ; mult <= 10 ; mult++)
 {
 res = i * mult;
-if (mult != 9)
+if (mult != 10)
 {
 if (t == 0)
 {
