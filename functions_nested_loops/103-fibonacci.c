@@ -9,25 +9,24 @@
 
 int main(void)
 {
-unsigned long int num1, num2, i, sum;
+unsigned long int num1, num2, i, sum, pair;
 
+pair = 0;
 sum = 0;
 num1 = 1;
 num2 = 2;
 i = 0;
 
-printf("%lu, ", num1);
-printf("%lu, ", num2);
-	while (sum < 4000000)
-	{
-		sum = num1 + num2;
-		num1 = num2;
-		num2 = sum;
-		if (i == 3524578)
-			printf("%lu", sum);
-		if ((sum % 2) == 0)
-			printf("%lu, ", sum);
-	}
+while (sum < 4000000)
+{
+	sum = num1 + num2;
+	num1 = num2;
+	num2 = sum;
+	if ((sum % 2) == 0)
+	pair = pair + sum;
+}
+printf("%lu", pair + 2);
+
 putchar('\n');
 return (0);
 }
