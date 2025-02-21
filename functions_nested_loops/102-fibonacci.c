@@ -23,7 +23,7 @@ for (i = 0; i <= 47; i++)
 sum = num1 + num2;
 num1 = num2;
 num2 = sum;
-if(i == 47)
+if (i == 47)
 printf("%lu", sum);
 else
 printf("%lu, ", sum);
