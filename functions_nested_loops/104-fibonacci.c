@@ -18,12 +18,12 @@ i = 0;
 
 printf("%lu, ", num1);
 printf("%lu, ", num2);
-for (i = 0; i <= 98; i++)
+for (i = 0; i <= 96; i++)
 {
 sum = num1 + num2;
 num1 = num2;
 num2 = sum;
-if (i == 98)
+if (i == 96)
 printf("%lu", sum);
 else
 printf("%lu, ", sum);
