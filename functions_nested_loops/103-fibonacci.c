@@ -9,13 +9,12 @@
 
 int main(void)
 {
-unsigned long int num1, num2, i, sum, pair;
+unsigned long int num1, num2,  sum, pair;
 
 pair = 0;
 sum = 0;
 num1 = 1;
 num2 = 2;
-i = 0;
 
 while (sum < 4000000)
 {
