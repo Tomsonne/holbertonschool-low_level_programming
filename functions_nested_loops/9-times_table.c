@@ -10,18 +10,24 @@
 
 void times_table(void)
 {
-int res, i, mult;
+int res, i, mult, t;
+
+t = 0;
 
 for (i = 0 ; i < 10 ; i++)
 {
+t = 0;
 for (mult = 0 ; mult < 10 ; mult++)
 {
 res = i * mult;
-if (mult != 9 && mult != 0)
+if (mult != 9)
 {
-if (mult <= 1)
+if (t == 0)
+{
 _putchar(res + '0');
-else if (res <= 9 && mult > 1)
+t++;
+}
+else if (res <= 9)
 {
 _putchar(',');
 _putchar(' ');
