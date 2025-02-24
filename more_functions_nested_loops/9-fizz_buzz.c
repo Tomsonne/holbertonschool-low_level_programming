@@ -23,8 +23,8 @@ printf("Fizz");
 else if ((val % 5) == 0)
 printf("Buzz");
 else
-printf("%d ", val);
-if (val !=100)
+printf("%d", val);
+if (val != 100)
 putchar(' ');
 
 }
