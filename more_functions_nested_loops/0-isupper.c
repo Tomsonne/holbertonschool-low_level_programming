@@ -1,16 +1,16 @@
 #include <ctype.h>
 #include"main.h"
 /**
- * _islower - Entry point
+ * _isupper - Entry point
  *@c: caractere a verifier
  *int c: caractere a verifier
  *fonction: ecris alphabet
  * Return: Always 0 (Success)
  */
 
-int _islower(int c)
+int _isupper(int c)
 {
-int res = islower(c);
+int res = _isupper(int);
 
 if (res != 0)
 return (0);
