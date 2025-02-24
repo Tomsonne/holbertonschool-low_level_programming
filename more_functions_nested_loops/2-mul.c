@@ -2,8 +2,8 @@
 #include"main.h"
 /**
  *mul - Entry point
- *@x : caractere a verifier
- *@y : azeazea
+ *@b : caractere a verifier
+ *@a : azeazea
  *int c: caractere a verifier
  *fonction: ecris alphabet
  * Return: Always 0 (Success)
