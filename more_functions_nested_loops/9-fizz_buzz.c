@@ -17,13 +17,15 @@ for (val = 1; val <= cent ; val++)
 {
 
 if ((val % 3) == 0 && (val % 5) == 0)
-printf("FizzBuzz ");
+printf("FizzBuzz");
 else if (val % 3 == 0)
-printf("Fizz ");
+printf("Fizz");
 else if ((val % 5) == 0)
-printf("Buzz ");
+printf("Buzz");
 else
 printf("%d ", val);
+if (val !=100)
+putchar(' ');
 
 }
 putchar('\n');
