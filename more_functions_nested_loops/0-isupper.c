@@ -10,9 +10,9 @@
 
 int _isupper(int c)
 {
-int res = _isupper(int);
+int res = isupper(c);
 
 if (res != 0)
-return (0);
 return (1);
+return (0);
 }
