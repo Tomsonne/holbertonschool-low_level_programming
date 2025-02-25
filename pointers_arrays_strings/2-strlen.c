@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-#include <string.h>
+
 /**
  *_strlen - Entry point
  *@s : caractere a verifier
@@ -11,5 +11,11 @@
 
 int _strlen(char *s)
 {
-return (strlen(s));
+int len;
+
+len = 0;
+while (s[len] != '\0')
+len++;
+
+return (len);
 }
