@@ -21,9 +21,9 @@ len++;
 
 for (i = 0 ; i < len ; i++)
 {
-if (src[i] != '\0')
 dest[i] = src[i];
 }
+dest[len] = '\0';
 return (src);
 }
 
