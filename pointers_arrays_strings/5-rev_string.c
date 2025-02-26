@@ -38,11 +38,12 @@ s[i] = temp[len - (i)];
 }*/
 
 char temp;
-    int n=_strlen(s)-1,i;
+    int n = _strlen(s)-1,i;
 
- for(i=0; i<n/2; i++){
-    temp=*(s+i);
-    *(s+i)=*(s+n-i);
-    *(s+n-i)=temp;
+ for(i = 0 ; i < n / 2 ; i++)
+{
+    temp = s[i];
+    s[i] = s[n-i];
+    s[n-i] = temp;
  }
 }
