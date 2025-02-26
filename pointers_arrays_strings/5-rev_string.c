@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
@@ -10,21 +9,40 @@
  * Return: Always 0 (Success)
  */
 
-void rev_string(char *s)
+int _strlen(char *s)
 {
-/*int len;
-int i;
-char *temp[strlen(s)];
+int len;
 
 len = 0;
 while (s[len] != '\0')
 len++;
 
-for (i = 1; i < len + 1  ; i++)
+return (len);
+}
+
+void rev_string(char *s)
+{
+/*
+int len;
+int i;
+
+len = _strlen(s);
+char temp[len];
+for (i = 0 ; i < len + 1  ; i++)
 {
 temp[i] = s[len - (i)];
-
 }
-*/
-s=strrev(s);
+for (i = 0 ; i < len + 1  ; i++)
+{
+s[i] = temp[len - (i)];
+}*/
+
+char temp;
+    int n=_strlen(s)-1,i;
+
+ for(i=0; i<n/2; i++){
+    temp=*(s+i);
+    *(s+i)=*(s+n-i);
+    *(s+n-i)=temp;
+ }
 }

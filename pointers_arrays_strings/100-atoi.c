@@ -13,8 +13,29 @@
 
 int _atoi(char *s)
 {
+int i;
 int res;
+int val;
 
-res = atoi(s);
-return(res);
+i = 0;
+val = 0;
+if ((s[i] == 45 || s[i]) >= (48 && s[i] <= 57))
+	{
+	while ((s[i] == 45 || s[i]) >= (48 && s[i] <= 57))
+		{
+		if (s[i] == 45)
+			res = res * -1;
+		else if (s[i] >= 48 && s[i] <= 57)
+			{
+				res[val] = s[i];
+				val++;
+			}
+		i = i + 1;
+		}
+	}
+else
+	_putchar('0');
+
+return (res);
+
 }
