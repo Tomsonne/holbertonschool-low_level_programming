@@ -5,6 +5,7 @@
  *_strncat - Entry point
  *@dest : caractere a verifier
  *@src :azeze
+ *@n :utc
  *int *n: caractere a verifier
  *fonction: ecris alphabet
  * Return: Always 0 (Success)
