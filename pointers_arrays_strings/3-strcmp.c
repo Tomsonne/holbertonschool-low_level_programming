@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- *_strcat - Entry point
- *@dest : caractere a verifier
- *@src :azeze
+ *_strcmp - Entry point
+ *@s1 : caractere a verifier
+ *@s2 :azeze
  *int *n: caractere a verifier
  *fonction: ecris alphabet
  * Return: Always 0 (Success)
