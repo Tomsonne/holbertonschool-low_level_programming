@@ -11,28 +11,22 @@
 char *cap_string(char *str)
 {
 char spe[16]= {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\n', ' ', '\t', '/', '\\'};
-int len = _strlen(str) ;
 int i, j;
-int maj;
 
-for (i = 0 ; i < len ; i++)
+
+i = 0;
+while (str[i] != '\0')
 	{
-	for (j = 0 ; j < 13 ; j++)
+	for (j = 0 ; j < 16 ; j++)
 		{
 		if ( str[i] == spe[j] )
 			{
-			maj = i+1;
-			while (str[maj] >= 'z' && str[maj] <= 'a')
-			maj++;
-			str[maj] = str[maj] - 32;
+			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+			str[i + 1] -= 32;
 			}
-
 		}
-
-
+	i++;
 	}
-
-
 return (str);
 }
 
