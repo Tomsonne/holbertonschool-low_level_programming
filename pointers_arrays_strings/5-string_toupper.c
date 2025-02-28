@@ -15,7 +15,7 @@ int i;
 int len = _strlen(str);
 for (i = 0; i < len; i++)
 {
-if (str[i] > 'a')
+if (str[i] >= 'a')
 str[i] = str[i] - 32;
 }
 return (str);
