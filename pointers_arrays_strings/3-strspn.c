@@ -2,10 +2,9 @@
 #include "main.h"
 
 /**
- *_memcpy - Entry point
- *@dest: caractere a verifier
- *@src:azeze
- *@n: number
+ *_strspn - Entry point
+ *@s: caractere a verifier
+ *@accept:azeze
  *int *n: caractere a verifier
  *fonction: ecris alphabet
  * Return: Always 0 (Success)
@@ -22,21 +21,19 @@ int found;
 
 for (b2 = 0 ; b2 < lenA ; b2++)
 {
-	for (b1 = 0 ; b1 < lenS ; b1++)
-        {
-	if (s[b1] == accept[b2])
-		{
-		found = 1;
-		break;
-		}
-
-	}
+for (b1 = 0 ; b1 < lenS ; b1++)
+{
+if (s[b1] == accept[b2])
+{
+found = 1;
+break;
+}
+}
 if (!found)
 break;
-
 res++;
 }
-return(res);
+return (res);
 }
 
 
