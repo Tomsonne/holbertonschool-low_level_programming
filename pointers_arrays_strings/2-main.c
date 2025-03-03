@@ -11,11 +11,14 @@ int main(void)
 {
     char *s = "hello";
     char *f;
+    char *t;
+    char *test = "First, solve the problem. Then, write the code.";
 
     f = _strchr(s, 'l');
-
+    t = _strchr(test, ',');
     if (f != NULL)
     {
+	printf("%s\n", t);
         printf("%s\n", f);
     }
     return (0);
