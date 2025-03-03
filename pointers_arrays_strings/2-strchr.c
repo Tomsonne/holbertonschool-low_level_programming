@@ -15,17 +15,17 @@ char *_strchr(char *s, char c)
 int i;
 int len = _strlen(s);
 
-if(s[len] == c)
-return(s + len);
+if (s[len] == c)
+return (s + len);
 for (i = 0; i  < len ; i++)
 {
-if(s[i] == c)
-return(s + i);
+if (s[i] == c)
+return (s + i);
 }
 
 
 
-return(NULL);
+return (NULL);
 }
 
 
