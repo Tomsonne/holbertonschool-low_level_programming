@@ -31,7 +31,7 @@ for (b2 = 0 ; b2 < lenA ; b2++)
 		}
 	}
 }
-return(5);
+return(res);
 }
 
 
