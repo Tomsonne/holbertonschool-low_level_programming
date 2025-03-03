@@ -21,6 +21,7 @@ int found;
 
 for (b2 = 0 ; b2 < lenA ; b2++)
 {
+found = 0;
 for (b1 = 0 ; b1 < lenS ; b1++)
 {
 if (s[b1] == accept[b2])
