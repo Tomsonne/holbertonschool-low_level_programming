@@ -2,10 +2,9 @@
 #include "main.h"
 
 /**
- *_memset - Entry point
- *@b: caractere a verifier
+ *_strchr - Entry point
+ *@c: caractere a verifier
  *@s:azeze
- *@n: number
  *int *n: caractere a verifier
  *fonction: ecris alphabet
  * Return: Always 0 (Success)
