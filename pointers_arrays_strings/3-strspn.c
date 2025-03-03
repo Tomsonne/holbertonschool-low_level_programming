@@ -19,10 +19,10 @@ int lenA = _strlen(accept);
 int b1, b2;
 int found;
 
-for (b2 = 0 ; b2 < lenA ; b2++)
+for (b1 = 0 ; b1 < lenS ; b1++)
 {
 found = 0;
-for (b1 = 0 ; b1 < lenS ; b1++)
+for (b2 = 0 ; b2 < lenA ; b2++)
 {
 if (s[b1] == accept[b2])
 {
