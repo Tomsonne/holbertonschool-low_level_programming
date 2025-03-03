@@ -22,7 +22,7 @@ for (b1 = 0 ; b1 < lenS ; b1++)
 		{
 		if (s[b1] == accept[b2])
 			{
-			return(s + b1);
+			return (s + b1);
 			}
 		}
 	}
