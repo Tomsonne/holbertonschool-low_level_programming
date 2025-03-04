@@ -1,5 +1,21 @@
 #include "main.h"
 #include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char *s = "First, solve the problem. Then, write the code.";
+    char *f = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    unsigned int n;
+
+    n = _strspn(s, f);
+    printf("%u\n", n);
+    return (0);
+}
 /**
  * main - check the code
  *
@@ -20,7 +36,7 @@ int main(void)
  * main - check the code
  *
  * Return: Always 0.
- */
+
 int main(void)
 {
     char s1[] = "Hello";
@@ -31,3 +47,4 @@ int main(void)
     printf("%d\n", _strcmp(s1, s1));
     return (0);
 }
+*/

@@ -1,13 +1,32 @@
 #include "main.h"
 #include <stdio.h>
 
+
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
+int main(void)
+{
+    char *s = "hello";
+    char *f;
+    char *t;
+    char *test = "First, solve the problem. Then, write the code.";
 
-/*
+    f = _strchr(s, 'l');
+    t = _strchr(test, ',');
+    if (f != NULL)
+    {
+	printf("%s\n", t);
+        printf("%s\n", f);
+    }
+    return (0);
+}
+/**
+  main - check the code
+ *
+ * Return: Always 0.
 int main(void)
 {
     char *str;
@@ -18,17 +37,17 @@ int main(void)
     printf("%d\n", len);
     return (0);
 }
-*/
+
 
 
 #include "main.h"
 #include <stdio.h>
 
-/**
+**
  * main - check the code
  *
  * Return: Always 0.
- */
+ *
 int main(void)
 {
     char s1[98];
@@ -62,3 +81,4 @@ int main(void)
     printf("\n");
     return (0);
 }
+*/

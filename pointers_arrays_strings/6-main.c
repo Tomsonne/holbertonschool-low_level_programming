@@ -1,3 +1,27 @@
+
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char board[8][8] = {
+        {'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
+        {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+        {'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},
+    };
+    print_chessboard(board);
+    return (0);
+}
 /*#include "main.h"
 
 
@@ -14,17 +38,17 @@ int main(void)
     puts2(str);
     return (0);
 }
-*/
+
 
 
 #include "main.h"
 #include <stdio.h>
 
-/**
+**
  * main - check the code
  *
  * Return: Always 0.
- */
+ *
 int main(void)
 {
     char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
@@ -35,3 +59,4 @@ int main(void)
     printf("%s", str);
     return (0);
 }
+*/
