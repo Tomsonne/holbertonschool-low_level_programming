@@ -25,6 +25,9 @@ lenght++;
 
 res = (char *)malloc((lenght + 1) * sizeof(char));
 
+if (res == NULL)
+return (NULL);
+
 for (i = 0; i < lenght; i++)
 res[i] = str[i];
 
