@@ -3,8 +3,8 @@
 
 /**
 * free_grid - frees a 2d array
-*@grid:
-*@height:
+*@grid:ezr
+*@height:zer
 *Return:returns void
 */
 
