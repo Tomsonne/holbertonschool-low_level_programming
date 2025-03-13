@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- *string_nconcat - Entry point
+ *_calloc - Entry point
  *@size : caractere a verifier
  *@nmemb : caractere a verifier
  *int *n: caractere a verifier
