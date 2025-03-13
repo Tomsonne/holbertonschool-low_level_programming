@@ -16,11 +16,11 @@ char *res;
 unsigned int i;
 
 if (str == NULL)
-return (NULL);
+	return (NULL);
 
 lenght = 0;
 
-while (str[lenght] != '0')
+while (str[lenght] != '\0')
 lenght++;
 
 res = malloc(lenght * sizeof(char) + 1);
