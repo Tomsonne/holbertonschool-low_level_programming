@@ -36,6 +36,7 @@ if (doggy == NULL)
 }
 for (i = 0; i < nlen; i++)
 	doggy->name[i] = name[i];
+doggy->name[nlen] = '\0';
 
 doggy->age = age;
 
@@ -48,5 +49,6 @@ if (doggy == NULL)
 }
 for (i = 0; i < olen; i++)
 	doggy->owner[i] = owner[i];
+doggy->owner[olen] = '\0';
 return (doggy);
 }
