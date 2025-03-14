@@ -2,8 +2,8 @@
 #include "dog.h"
 
 /**
- *_strdup - Entry point
- *@str : caractere a verifier
+ *print_dog - Entry point
+ *@d : caractere a verifier
  *int *n: caractere a verifier
  *fonction: ecris alphabet
  * Return: Always 0 (Success)
