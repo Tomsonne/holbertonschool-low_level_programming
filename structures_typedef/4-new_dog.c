@@ -17,23 +17,23 @@ int nlen, olen, i;
 dog_t *doggy;
 
 nlen = olen = 0;
-while (name[nlen++])
-	;
-while (owner[olen++])
-	;
+while (name[nlen])
+nlen++;
+while (owner[olen])
+olen++;
 
 doggy = malloc(sizeof(dog_t));
 if (doggy == NULL)
 	return (NULL);
 
 
-doggy->name = malloc((nlen + 1) * sizeof(char));
+doggy->name = malloc((nlen + 1) *sizeof(char));
 if (doggy == NULL)
 {
-	free(doggy->name);
 	free(doggy);
 	return (NULL);
 }
+
 for (i = 0; i < nlen; i++)
 	doggy->name[i] = name[i];
 doggy->name[nlen] = '\0';
@@ -41,9 +41,10 @@ doggy->name[nlen] = '\0';
 doggy->age = age;
 
 
-doggy->owner = malloc((olen + 1) * sizeof(char));
+doggy->owner = malloc((olen + 1) *sizeof(char));
 if (doggy == NULL)
 {
+	free(doggy->name);
 	free(doggy);
 	return (NULL);
 }
