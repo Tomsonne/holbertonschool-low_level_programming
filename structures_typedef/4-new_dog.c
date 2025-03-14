@@ -29,7 +29,11 @@ if (doggy == NULL)
 
 doggy->name = malloc((nlen + 1) * sizeof(char));
 if (doggy == NULL)
+{
+	free(doggy->name);
+	free(doggy);
 	return (NULL);
+}
 for (i = 0; i < nlen; i++)
 	doggy->name[i] = name[i];
 
@@ -38,7 +42,10 @@ doggy->age = age;
 
 doggy->owner = malloc((olen + 1) * sizeof(char));
 if (doggy == NULL)
+{
+	free(doggy);
 	return (NULL);
+}
 for (i = 0; i < olen; i++)
 	doggy->owner[i] = owner[i];
 return (doggy);
