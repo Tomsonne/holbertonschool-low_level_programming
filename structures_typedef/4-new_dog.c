@@ -26,7 +26,8 @@ doggy = malloc(sizeof(dog_t));
 if (doggy == NULL)
 	return (NULL);
 
-doggy->name = malloc(nlen);
+
+doggy->name = malloc((nlen + 1) * sizeof(char));
 if (doggy == NULL)
 	return (NULL);
 for (i = 0; i < nlen; i++)
@@ -34,7 +35,8 @@ for (i = 0; i < nlen; i++)
 
 doggy->age = age;
 
-doggy->owner = malloc(olen);
+
+doggy->owner = malloc((olen + 1) * sizeof(char));
 if (doggy == NULL)
 	return (NULL);
 for (i = 0; i < olen; i++)
