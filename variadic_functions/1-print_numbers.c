@@ -25,6 +25,7 @@ printf("%d", va_arg(list, int));
 for (i = 1; i < n; i++)
 	printf("%s%d", separator, va_arg(list, int));
 
+va_end(list);
 return;
 
 }
