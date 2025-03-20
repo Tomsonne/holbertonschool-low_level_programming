@@ -20,8 +20,6 @@ if (n == 0)
 return;
 
 va_start(list, n);
-printf("%d", va_arg(list, int));
-
 for (i = 0; i < n; i++)
 {
 	printf("%d", va_arg(list, int));
