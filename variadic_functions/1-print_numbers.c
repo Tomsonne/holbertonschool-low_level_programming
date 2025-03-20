@@ -22,9 +22,9 @@ return;
 va_start(list, n);
 for (i = 0; i < n; i++)
 {
-	printf("%d", va_arg(list, int));
-    if (i < n - 1 && separator)
-			printf("%s", separator);
+printf("%d", va_arg(list, int));
+if (i < n - 1 && separator)
+printf("%s", separator);
 }
 printf("\n");
 va_end(list);
