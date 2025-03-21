@@ -19,25 +19,25 @@ form form_types[] = {
 { "f", print_float },
 { "s", print_char_ptr }
 };
-unsigned int i = 0;
-unsigned int j = 0;
+unsigned int index1 = 0;
+unsigned int index2 = 0;
 char *separator = "";
 
 va_start(args, format);
 
-while (format != NULL && format[i])
+while (format != NULL && format[index2])
 {
-	j = 0;
-	while (j < 4)
+	index1 = 0;
+	while (index1 < 4)
 	{
-		if (format[i] == *form_types[j].identifier)
+		if (format[index2] == *form_types[index1].identifier)
 		{
-			form_types[j].f(separator, args);
+			form_types[index1].f(separator, args);
 			separator = ", ";
 		}
-		j++;
+		index1++;
 	}
-i++;
+index2++;
 }
 va_end(args);
 printf("\n");
