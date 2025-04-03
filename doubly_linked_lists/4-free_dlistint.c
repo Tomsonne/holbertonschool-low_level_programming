@@ -19,7 +19,6 @@ while (head != NULL)
 temp = head;
 head = head->next;
 
-free(temp->n);
 free(temp);
 }
 }
