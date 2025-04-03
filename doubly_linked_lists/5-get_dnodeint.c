@@ -22,7 +22,7 @@ i = 0;
 while (head != NULL)
 {
 if (i == index)
-    break;
+break;
 head = head->next;
 i++;
 }
