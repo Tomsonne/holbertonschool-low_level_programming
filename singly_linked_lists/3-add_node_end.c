@@ -8,15 +8,15 @@
  * Return: Always 0 (Success)
  */
 
-int _strlen(char *s)
+int _strlen(const char *s)
 {
-int len;
+	int len;
 
-len = 0;
-while (s[len] != '\0')
-len++;
+	len = 0;
+	while (s[len] != '\0')
+	len++;
 
-return (len);
+	return (len);
 }
 
 /**
@@ -26,38 +26,41 @@ return (len);
  *
  * Return: a
  */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
-list_t *new_node;
-list_t *temp;
-int count = 0;
+	list_t *new_node;
+	list_t *temp;
 
-new_node = malloc(sizeof(list_t));
-if (new_node == NULL)
-{
-return (NULL);
-}
-new_node->str = strdup(str);
-if (new_node->str == NULL)
-{
-free(new_node);
-return (NULL);
-}
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
+	{
+		return (NULL);
+	}
 
-new_node->len = _strlen(str);
-new_node->next = NULL;
+	new_node->str = strdup(str);
+	if (new_node->str == NULL)
+	{
+		free(new_node);
+		return (NULL);
+	}
 
-if (*head == NULL)
-{
-*head = new_node;
-return (new_node);
-}
-temp = *head;
-while (temp->next != NULL)
-{
-temp = temp->next;
-}
-temp->next = new_node;
+	new_node->len = _strlen(str);
+	new_node->next = NULL;
 
-return (new_node);
+	if (*head == NULL)
+	{
+		*head = new_node;
+		return (new_node);
+	}
+
+	temp = *head;
+	while (temp->next != NULL)
+	{
+		temp = temp->next;
+	}
+
+	temp->next = new_node;
+
+	return (new_node);
 }
