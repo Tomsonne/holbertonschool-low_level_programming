@@ -16,3 +16,5 @@ for (c = h, count = 0; c != NULL; count++, c = c->next)
 
 return (count);
 }
+
+
